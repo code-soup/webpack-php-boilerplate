@@ -30,7 +30,7 @@
         "lint": "npm run -s lint:scripts && npm run -s lint:styles"
     },
     "bugs": {
-        "url": "https://github.com/code-soup/webpack-drop-in-boilerplate/issues"
+        "url": "https://github.com/code-soup/webpack-php-boilerplate/issues"
     },
     "engines": {
         "node": ">= 12.16.0"
@@ -76,7 +76,7 @@
         "webpack-merge": "^5.7.3",
         "yargs": "~16.2.0"
     },
-    "name": "webpack-drop-in-boilerplate",
+    "name": "webpack-php-boilerplate",
     "version": "1.0.0",
     "license": "GPL-3.0",
     "keywords": [
@@ -88,7 +88,7 @@
     "description": "Webpack drop-in boilerplate for PHP and HTML",
     "repository": {
         "type": "git",
-        "url": "https://github.com/code-soup/webpack-drop-in-boilerplate.git"
+        "url": "https://github.com/code-soup/webpack-php-boilerplate.git"
     },
     "dependencies": {}
 }

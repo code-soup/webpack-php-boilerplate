@@ -1,4 +1,4 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Webpack5 build script boilerplate for PHP 
 
 This project has been created using **webpack scaffold**, you can now run
 

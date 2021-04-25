@@ -4,10 +4,11 @@ module.exports = {
             "scripts/main.js",
             "styles/main.scss"
         ],
+        /* Add multiple entry points
         admin: [
             "scripts/admin.js",
             "styles/admin.scss",
-        ],
+        ],*/
     },
     // run image optimization
     // if you optimize images manually then you might want to turn this off

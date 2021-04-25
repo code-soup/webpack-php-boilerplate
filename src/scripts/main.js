@@ -3,5 +3,5 @@
  * No jQuery here sorry
  */
 document.addEventListener("DOMContentLoaded", () => {
-    console.log('reload please ! !');
+    // Do something on dom ready
 });
