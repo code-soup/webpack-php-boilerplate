@@ -20,14 +20,13 @@
     ],
     "scripts": {
         "start": "webpack serve --mode development --color --config src/webpack/config.webpack.js",
-        "reinit": "rimraf dist && rimraf node_modules && yarn",
         "build": "webpack --mode development --progress --config src/webpack/config.webpack.js",
-        "test": "npm run -s lint",
+        "build:prod": "webpack --mode production --progress --config src/webpack/config.webpack.js",
+        "lint": "npm run -s lint:scripts && npm run -s lint:styles",
         "lint:scripts": "eslint src/scripts src/webpack",
         "lint:styles": "stylelint \"src/styles/**/*.{css,sass,scss}\"",
-        "build:prod": "webpack --mode production --progress --config src/webpack/config.webpack.js",
-        "clean": "rimraf dist",
-        "lint": "npm run -s lint:scripts && npm run -s lint:styles"
+        "reinit": "rimraf dist && rimraf node_modules && yarn",
+        "clean": "rimraf dist"
     },
     "bugs": {
         "url": "https://github.com/code-soup/webpack-php-boilerplate/issues"

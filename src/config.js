@@ -28,12 +28,14 @@ module.exports = {
     // This is very important line, most common reason why things break
     // because paths to files are determined by this
     publicPath: "/codesoup/webpack-config",
+    // production path to /dist folder, if different from 
+    publicPathProd: "/",
     // localhost or custom host name
-    devUrl: "http://localhost",
+    devHost: "http://localhost",
     // Use webpack-dev-server built-in proxy server
     useProxy: false,
     // proxyUrl, when watch mode is enabled you will access website on this url
-    proxyUrl: "http://localhost",
+    proxyHost: "http://localhost",
     // proxy port used in watch mode
     proxyPort: 3000,
     // folders / files to include in while in watch mode to monitor for changes

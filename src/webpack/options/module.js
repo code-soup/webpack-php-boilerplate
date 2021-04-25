@@ -32,12 +32,6 @@ module.exports = {
     rules: [
         {
             enforce: 'pre',
-            test: /\.js$/,
-            include: config.paths.src,
-            use: 'eslint-loader',
-        },
-        {
-            enforce: 'pre',
             test: /\.(js|s?[ca]ss)$/,
             include: config.paths.src,
             loader: 'import-glob',

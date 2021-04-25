@@ -5,7 +5,7 @@ const { merge } = require('webpack-merge');
 
 /**
  * Webpack configuration object
- * Webpack v5.21.1
+ * Webpack v5.35.1
  *
  * @link {https://webpack.js.org/configuration/}
  */
@@ -15,7 +15,9 @@ let webpackConfig = {
     output: {
         path: config.paths.dist,
         pathinfo: ! config.enabled.production,
-        publicPath: config.paths.publicPath,
+        publicPath: config.enabled.production
+            ? config.paths.publicPathProd
+            : config.paths.publicPath,
         filename: `scripts/${config.fileName}.js`,
         assetModuleFilename: config.assetFilename,
     },
@@ -27,7 +29,9 @@ let webpackConfig = {
         modules: false,
         entrypoints: true,
     },
-    devtool: config.enabled.production ? false : 'cheap-module-source-map',
+    devtool: config.enabled.production
+        ? false
+        : 'cheap-module-source-map',
     module: require('./options/module'),
     resolve: {
         preferRelative: true,

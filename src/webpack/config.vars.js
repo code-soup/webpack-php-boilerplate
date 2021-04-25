@@ -3,6 +3,7 @@
 const desire   = require('./utils/desire');
 const resolver = require('./utils/resolve');
 
+const path      = require('path');
 const { argv }  = require('yargs');
 const { merge } = require('webpack-merge');
 
@@ -22,7 +23,8 @@ const config = merge(
             src: resolver(),
             root: resolver('../'),
             dist: resolver('../dist'),
-            publicPath: `${userConfig.publicPath}/dist/`,
+            publicPath: path.join(userConfig.publicPath, 'dist/'),
+            publicPathProd: path.join(userConfig.publicPathProd, 'dist/'),
             node_modules: resolver('../node_modules'),
         },
         enabled: {
